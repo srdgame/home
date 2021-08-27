@@ -55,23 +55,23 @@ const Navigation = React.forwardRef((props, ref) => {
               className="nav-link lead"
               href={process.env.PUBLIC_URL + "/#projects"}
             >
-              Projects
+              代码作品
             </Nav.Link>
           )}
           <Nav.Link
             className="nav-link lead"
-            href={about.resume}
-            target="_blank"
+            href="http://iot.kooiot.in"
+            target="http://iot.kooiot.in"
             rel="noreferrer noopener"
           >
-            Resume
+            平台入口
           </Nav.Link>
           {about.show && (
             <Nav.Link
               className="nav-link lead"
               href={process.env.PUBLIC_URL + "/#aboutme"}
             >
-              About
+              关于我
             </Nav.Link>
           )}
           {skills.show && (
@@ -79,7 +79,7 @@ const Navigation = React.forwardRef((props, ref) => {
               className="nav-link lead"
               href={process.env.PUBLIC_URL + "/#skills"}
             >
-              Skills
+              个人能力
             </Nav.Link>
           )}
         </Nav>
