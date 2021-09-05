@@ -9,13 +9,24 @@ const Footer = (props) => {
       <Container>
         {props.children}
         <a
-          className="badge badge-dark"
-          rel="noopener"
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://beian.miit.gov.cn"
           aria-label="京ICP备2021026964号"
         >
           京ICP备2021026964号
-        </a>{" "}
+        </a>
+        {" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802035844"
+          aria-label="京公网安备 11010802035844号"
+        >
+          <img src={process.env.PUBLIC_URL + "/beian.png"} alt="备案图标"/>
+          京公网安备 11010802035844号
+        </a>
+        {" "}
         <p>
           <small className="text-muted">
             了解更多作品详情，请留言垂询。
